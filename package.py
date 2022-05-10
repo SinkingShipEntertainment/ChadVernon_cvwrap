@@ -5,7 +5,7 @@ authors = [
 ]
 
 # NOTE: version = <cvwrap_version>.sse.<sse_version>
-version = "1.0.0.sse.1.1.0"
+version = "1.0.0.sse.1.1.1"
 
 description = \
     """

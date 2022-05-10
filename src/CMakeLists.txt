@@ -25,6 +25,6 @@ target_include_directories(${PROJECT_NAME} PRIVATE Maya::Maya)
 target_compile_options(${PROJECT_NAME} PRIVATE ${COMPILE_FLAGS})
 MAYA_PLUGIN(${PROJECT_NAME})
 
-install(TARGETS ${PROJECT_NAME} ${MAYA_TARGET_TYPE} DESTINATION plug-ins)
-install(FILES "cvwrap.cl" DESTINATION plug-ins)
+install(TARGETS ${PROJECT_NAME} ${MAYA_TARGET_TYPE} DESTINATION cvwrap/plug-ins)
+install(FILES "cvwrap.cl" DESTINATION cvwrap/plug-ins)
 
