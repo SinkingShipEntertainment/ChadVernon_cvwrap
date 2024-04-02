@@ -4,6 +4,10 @@ authors = [
     "Chad Vernon"
 ]
 
+# This repo has submodules. If you are cloning it for the first time, remember to run:
+# git submodule init
+# git submodule update
+
 # NOTE: version = <cvwrap_version>.sse.<sse_version>
 version = "1.0.0.sse.1.1.1"
 
