@@ -21,6 +21,8 @@ description = \
 with scope("config") as c:
     import os
     c.release_packages_path = os.environ["SSE_REZ_REPO_RELEASE_EXT"]
+    # This repo needs to be built in 1 thread
+    c.build_thread_count = 1
 
 requires = [
 ]
