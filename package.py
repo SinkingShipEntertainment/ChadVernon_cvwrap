@@ -9,7 +9,7 @@ authors = [
 # git submodule update
 
 # NOTE: version = <cvwrap_version>.sse.<sse_version>
-version = "1.0.0.sse.1.1.1"
+version = "1.0.1.sse.1.1.2"
 
 description = \
     """
@@ -73,8 +73,8 @@ def commands():
     env.CVWRAP_ROOT.append("{root}")
     env.CVWRAP_LOCATION.append("{root}")
 
-    env.LD_LIBRARY_PATH.append("{root}/cvwrap/plug-ins")
-    env.PYTHONPATH.append("{root}/cvwrap/scripts")
-
-    # For Maya to locate the .mod file to setup env variables for plugins and libraries
     env.MAYA_MODULE_PATH.append("{root}/cvwrap")
+    env.MAYA_PLUG_IN_PATH.append("{root}/plug-ins")
+
+    # A userSetup.py to autoload the plugin upon startup lives in here.
+    env.MAYA_SCRIPT_PATH.append("{root}/cvwrap")
