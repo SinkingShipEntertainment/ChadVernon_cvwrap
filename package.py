@@ -9,7 +9,7 @@ authors = [
 # git submodule update
 
 # NOTE: version = <cvwrap_version>.sse.<sse_version>
-version = "1.0.1.sse.1.1.2"
+version = "1.0.1.sse.1.1.3"
 
 description = \
     """
@@ -32,7 +32,6 @@ variants = [
     ["maya-2024", "python-3.9", "maya_devkit-2024"],
     ["maya-2024", "python-3.10", "maya_devkit-2024"],
     ["maya-2025", "python-3.11", "maya_devkit-2025"],
-
 ]
 
 uuid = "repository.ChadVernon_cvwrap"

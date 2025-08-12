@@ -1,6 +1,9 @@
 import maya.cmds as cmds
 if cmds.about(api=True) >= 201700:
-    from PySide2 import QtWidgets as QtGui
+    try:
+        from PySide6 import QtWidgets as QtGui
+    except ImportError:
+        from PySide2 import QtWidgets as QtGui
 else:
     from PySide import QtGui
 from functools import partial

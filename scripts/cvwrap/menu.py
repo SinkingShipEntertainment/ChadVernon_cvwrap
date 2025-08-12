@@ -3,7 +3,10 @@ import maya.mel as mel
 import maya.OpenMayaUI as OpenMayaUI
 import os
 if cmds.about(api=True) >= 201700:
-    from PySide2 import QtGui
+    try:
+        from PySide6 import QtCore, QtGui, QtWidgets
+    except ImportError:
+        from PySide2 import QtCore, QtGui, QtWidgets
 else:
     from PySide import QtGui
 import cvwrap.bindui
